@@ -9,6 +9,7 @@ ___
 - WSL 2
 - Docker Composer
 - Ubuntu 20.04.6 LTS
+- PHPUnit
 
 ___
 ### Sobre o ambiente

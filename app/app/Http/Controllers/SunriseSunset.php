@@ -22,16 +22,17 @@ class SunriseSunset extends BaseController
         return view('Pages/SunriseSunset');
     }
 
-    public function getSunriseSunset(StorePostSunriseSunset $Request) {
+    public function getSunriseSunset(StorePostSunriseSunset $request) {
         try {
-            $response = $this->sendRequest($Request);
+            $response = $this->sendRequest($request);
 
-            $result = $this->getRemaingTime($Request['type'], $response->results);
+            $result = $this->getRemaingTime($request['type'], $response->results);
 
             return view(
                 'Pages/SunriseSunset',
                 [
-                    'response' => $result
+                    'response' => $result,
+                    'request' => $request
                 ]
             );
 
@@ -63,25 +64,36 @@ class SunriseSunset extends BaseController
 
         return json_decode($client->send($request)->getBody());
     }
+
     private function getRemaingTime($type, $results) {
         date_default_timezone_set('America/Sao_Paulo');
 
         if ($type == 'sunrise') {
-            $time = $results->sunrise;
+            $time = date('Y-m-d H:i:s',  strtotime($results->sunrise));
         } else {
-            $time = $results->sunset;
+            $time = date('Y-m-d H:i:s',  strtotime($results->sunset));
         }
 
         $now = new DateTime();
-        $future_date = new DateTime($time);
+        $sunrise_sunset_date = new DateTime($time);
 
-        $remaing_time = $future_date->diff($now);
-//dd($future_date);
+        $remaing_time = $now->diff($sunrise_sunset_date);
+
+        if (
+            strtotime($now->format('Y-m-d H:i:s'))
+            >
+            strtotime($time)
+        ) {
+            $remaing_time_text = $remaing_time->format('%H:%i:%s'). " ago.";
+        } else {
+            $remaing_time_text = "In {$remaing_time->format('%H:%i:%s')}";
+        }
+
         return array(
             'type' => $type,
-            'remaing_time' => $remaing_time->format('%H:%i:%s'),
+            'remaing_time' => $remaing_time_text,
             'exact_datetime' => $now->format('d/m/y H:i:s'),
-            'request_datetime' => $future_date->format('d/m/y H:i:s')
+            'request_datetime' => date('d/m/y H:i:s', strtotime($remaing_time->format('%H:%i:%s')))
         );
     }
 }

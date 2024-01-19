@@ -23,17 +23,17 @@
 
             <div class="mb-6">
                 <label for="latitude">Latitude of the Event</label>
-                <input required type="number" class="form-control" name="latitude" id="latitude" placeholder="-00.0000000">
+                <input required type="number" step=any class="form-control" name="latitude" id="latitude" value="{{ !empty($request['latitude']) ? $request['latitude'] : '' }}" placeholder="-00.0000000">
             </div>
             <div class="mb-6">
                 <label for="longitude">Longitude of the Event</label>
-                <input required type="number" class="form-control" name="longitude" id="longitude" placeholder="-00.0000000">
+                <input required type="number" step=any class="form-control" name="longitude" id="longitude" value="{{ !empty($request['longitude']) ? $request['longitude'] : '' }}" placeholder="-00.0000000">
             </div>
             <div class="mb-6">
                 <label for="type">Event Type</label>
                 <select class="form-control" name="type" id="type">
-                    <option value="sunrise">Sunrise</option>
-                    <option value="sunset">Sunset</option>
+                    <option value="sunrise" {{ $request['type'] == 'sunrise' ? 'selected' : '' }}>Sunrise</option>
+                    <option value="sunset" {{ $request['type'] == 'sunset' ? 'selected' : '' }}>Sunset</option>
                 </select>
             </div>
             <hr class="mb-4">
