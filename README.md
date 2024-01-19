@@ -14,7 +14,22 @@ ___
 ___
 ### Sobre o ambiente
 
-O ambiente de desenvolvimento foi criado dentro de uma maquina virtual Ubuntu 20.04.6 LTS com Docker instalado. A maquina virtual foi criada utilizando WSL 2 em uma maquina com Windows 10.
+O ambiente de desenvolvimento foi criado em uma máquina virtual Ubuntu 20.04.6 LTS com Docker instalado. A maquina virtual foi criada utilizando WSL 2 em uma máquina com Windows 10.
+
+Download o Ubuntu 20.04.6 LTS:
+
+[Ubuntu 20.04.6 LTS](https://apps.microsoft.com/detail/9MTTCL66CPXJ?hl=pt-br&gl=US)
+
+Artigos sobre a instalação do docker dentro da máquina virtual Ubuntu 20.04.6 LTS:
+
+[How To Install and Use Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
+
+[How To Install and Use Docker Compose on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
+
+Artigo sobre atualização do WSL 2 no Windows:
+
+[Como instalar o Linux no Windows com o WSL](https://learn.microsoft.com/pt-br/windows/wsl/install)
+
 ___
 ### Como rodar o projeto
 
@@ -67,11 +82,11 @@ ___
 ## Um pouco sobre o João Pedro:
 ### Como você começou no mundo da programação? Quais foram suas motivações? O que chamou sua atenção?
 
-Foi derrepente, quando eu terminei meu curso de técnico em redes de computadores na faculdade SENAI surgiu uma oportunidade de poder fazer tecnólogo, as opções eram Automação Industrial, Redes de Computadores, Sistemas Embarcados e Análise e Desenvolvimento de Sistemas. De todas as opções, a que melhor se encaixava com a minha personalidade e com o que eu gostava de fazer era Análise e Desenvolvimento de Sistemas. Ao ter essas opções na minha frente, foi quando eu percebi que eu amo criar sistemas que poderiam resolver qualquer tipo de situação, ou até mesmo criar produtos para entretenimento como jogos, fora o desafio de desenvolver lógica de programação que foi algo que eu acredito ter melhorado muito a minha capacidade mental. Me fez perceber que gosto de enigmas e quebra-cabeças.
+Foi derrepente, quando eu terminei o meu curso de técnico em redes de computadores na faculdade SENAI surgiu uma oportunidade de poder fazer tecnólogo, as opções eram Automação Industrial, Redes de Computadores, Sistemas Embarcados e Análise e Desenvolvimento de Sistemas. De todas as opções, a que melhor se encaixava com a minha personalidade e com o que eu gostava de fazer era Análise e Desenvolvimento de Sistemas. Ao ter essas opções na minha frente, foi quando eu percebi que eu amo criar sistemas que poderiam resolver qualquer tipo de situação, ou até mesmo criar produtos para entretenimento como jogos, fora o desafio de desenvolver lógica de programação que foi algo que eu acredito ter melhorado muito a minha capacidade mental. Me fez perceber que gosto de enigmas e quebra-cabeças.
 
 ### Você tem algum projeto pessoal que tem trabalhado recentemente? Se sim,poderia nos contar um pouco sobre o projeto e quais tem sido seus principais desafios?
 
-Sim, tenho dois projetos. Um deles é um e-commerce que fiz para um amigo que queria começar um negócio de produtos produzidos por impressora 3D. O segundo projeto é a criação do meu próprio jogo MMORPG, no qual o maior desafio é o impasse criativo, criação de história e direção artística é bem difícil de fazer.  
+Sim, tenho dois projetos. Um deles é um ‘e-commerce’ que fiz para um amigo que queria começar um negócio de produtos produzidos por impressora 3D. O segundo projeto é a criação do meu próprio jogo MMORPG, no qual o maior desafio é o impasse criativo, criação de história e direção artística é bem difícil de fazer.  
 
 ### Para você, qual é a forma mais efetiva de aprender algo novo relacionado à programação?
 
