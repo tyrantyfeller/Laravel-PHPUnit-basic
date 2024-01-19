@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app:
+    image: app:dev
+    container_name: app
+    build:
+      context: ./
+      dockerfile: Dockerfile-local
+    environment:
+      - APACHE_SERVER_NAME=localhost
+    ports:
+      - 8080:80
+    networks:
+      - default
+    volumes:
+      - ./app:/var/www
+    cap_add:
+      - SYS_TIME
+      - SYS_NICE
