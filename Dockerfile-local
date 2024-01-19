@@ -62,7 +62,7 @@ RUN touch /var/log/php/errors.log && chmod 777 /var/log/php/errors.log
 RUN touch /var/www/storage/logs/exception.log && chmod 777 /var/www/storage/logs/exception.log
 
 # Deployment steps
-RUN composer install --optimize-autoloader
+#RUN composer install  --optimize-autoloader
 
 EXPOSE 80
 ENTRYPOINT ["/var/run.sh"]
