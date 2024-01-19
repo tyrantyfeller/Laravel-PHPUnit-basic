@@ -1,4 +1,7 @@
 # VoxusChallenge
+
+Feito por [João Pedro Lemos Menezes](https://www.linkedin.com/in/jo%C3%A3o-pedro-lemos-menezes-518a1ab4/)
+
 ___
 ### Tecnologias e Sistema Operacional Utilizado:
 
@@ -60,7 +63,7 @@ exit
 
 ___
 
-## Um pouco sobre mim...:
+## Um pouco sobre o João Pedro:
 ### Como você começou no mundo da programação? Quais foram suas motivações? O que chamou sua atenção?
 
 Foi derrepente, quando eu terminei meu curso de técnico em redes de computadores na faculdade SENAI surgiu uma oportunidade de poder fazer tecnólogo, as opções eram Automação Industrial, Redes de Computadores, Sistemas Embarcados e Análise e Desenvolvimento de Sistemas. De todas as opções, a que melhor se encaixava com a minha personalidade e com o que eu gostava de fazer era Análise e Desenvolvimento de Sistemas. Ao ter essas opções na minha frente, foi quando eu percebi que eu amo criar sistemas que poderiam resolver qualquer tipo de situação, ou até mesmo criar produtos para entretenimento como jogos, fora o desafio de desenvolver lógica de programação que foi algo que eu acredito ter melhorado muito a minha capacidade mental. Me fez perceber que gosto de enigmas e quebra-cabeças.
