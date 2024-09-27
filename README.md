@@ -1,4 +1,4 @@
-# VoxusChallenge
+# Teste Laravel com PHPUnit
 
 Feito por [João Pedro Lemos Menezes](https://www.linkedin.com/in/jo%C3%A3o-pedro-lemos-menezes-518a1ab4/)
 
